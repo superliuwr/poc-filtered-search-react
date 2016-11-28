@@ -6,7 +6,7 @@ function TagPanel({
 }) {
   return (
     <div style={TagPanel.styles.div}>
-      <span>{terms}</span>
+      <span id="tag-terms">{terms}</span>
       <a
         style={TagPanel.styles.a}
         onClick={(event) => onTermsChange(event.target.value)}

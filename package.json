@@ -7,10 +7,12 @@
     "start": "webpack-dev-server --progress --colors --hot --inline --host 0.0.0.0 --port 8888",
     "build": "webpack",
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js 'src/**/*spec.js'",
-    "test:watch": "npm run test --watch"
+    "test:watch": "npm run test --watch",
+    "e2e": "protractor ./e2e/config.js",
+    "e2e-driver": "webdriver-manager start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["demo"],
+  "author": "Marvin Liu",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.9.1",
@@ -31,13 +33,17 @@
     "imports-loader": "^0.6.5",
     "jsdom": "^9.2.1",
     "mocha": "^2.5.3",
+    "protractor": "^4.0.11",
     "react-addons-test-utils": "^15.1.0",
     "react-hot-loader": "^3.0.0-beta.3",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
-  "axios": "^0.14.0",
+    "axios": "^0.14.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^2.5.3",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",

@@ -8,6 +8,7 @@ function SearchTermInput({
   return (
     <div style={SearchTermInput.styles.div}>
       <InputMenu
+        id="terms"
         placeHolder=""
         onChange={(event) => onTermsChange(event.target.value)}
         value={terms}
